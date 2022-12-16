@@ -1,0 +1,179 @@
+
+/* Editor page */
+.mainWrap {
+height: calc(100vh - 80px);
+/* height: 100%; */
+width: 100%;
+}
+
+.editors{
+height: 100%;
+width: 100%;
+}
+
+.clientsList {
+display: flex;
+align-items: center;
+flex-wrap: wrap;
+gap: 20px;
+;
+}
+
+.colsWrapper{
+display: flex;
+width: 100%;
+flex-direction: column;
+height: calc(100vh - 80px);
+position: relative;
+}
+
+.editorWrap{
+width: 100%;
+height: 100%;
+}
+
+.topWrapEditor{
+    position: relative;
+}
+
+.topWrapEditor .buttons{
+    position: fixed;
+    top: 5px;
+    right: 0;
+    left: 0;
+    width: 50%;
+    margin: 0 auto;
+z-index: 999;
+    
+}
+
+.colsWrapper .iframe{
+background-color: rgb(250, 250, 245) ;
+height: calc(100vh - 82px);
+
+/* border-radius: 25px; */
+/* overflow-y: auto; */
+}
+
+
+.editorWrap .buttons{
+display: flex;
+align-items: center;
+justify-content: center;
+height: 30px;
+padding: 5px 0;
+background-color: #1D1D1D;
+gap: 10px;
+z-index: 999;
+
+}
+
+.editorContainer{
+display: flex;
+width: 100%;
+height: 100%;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+position: relative;
+}
+
+.editorContainer .themes{
+position: fixed;
+top: 42px;
+right: 0;
+left: 0;
+background-color: #1D1D1D;
+width: 50%;
+display: flex;
+margin: 0 auto;
+align-items: center;
+justify-content: center;
+color: coral;
+gap: 30px;
+z-index: 999;
+
+}
+
+
+.client {
+display: flex;
+position: relative;
+align-items: center;
+flex-direction: column;
+font-weight: bold;
+}
+
+.client .onlinePoint{
+position: absolute;
+background-color: #4aed88;
+width: 12px;
+height: 12px;
+border-radius: 50%;
+top: -3px;
+right: -2px;
+}
+
+
+.CodeMirror {
+height: calc(100vh - 92px);
+font-size: 15px;
+line-height: 1.6;
+padding-top: 20px;
+}
+
+
+
+/* Compiler */
+.compiler, .codes{
+display: flex;
+align-items: center;
+justify-content: center;
+background: #282A36;
+height: 100vh;
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+    .topWrapEditor{
+        position: relative;
+    }
+    .topWrapEditor .buttons{
+        position: relative;
+        width: 100%;
+    }
+
+    .editorContainer{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    }
+    
+    
+    .editorContainer .themes{
+    position: relative;
+    /* background-color: #282A36; */
+    top: 0rem;
+    z-index:900;
+    width: 100%;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    color: coral;
+    gap: 20px;
+    padding-bottom: 10px;
+    }
+
+    .CodeMirror {
+        height: calc(100vh - 92px);
+        font-size: 12px;
+        line-height: 1.6;
+        padding-top: 20px;
+    }
+    
+}
